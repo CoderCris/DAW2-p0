@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <script type="text/javascript" src="https://www.gstatic.com/firebasejs/8.2.7/firebase-app.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+    <title>DAW2</title>
+  </head>
+  <body>
+    <form id="newUserForm_id" action="login.html" method="post" onsubmit="formsValidation()">
+      <label for="newUser_id">Escribe tu nombre de usuario:</label>
+      <input type="text" id='newUser_id' name="" value="" required>
+      <label for="newPass_id">Elige una contraseña:</label>
+      <input type="text" id='newPass_id' name="" value="" required>
+      <label for="newPass_id">Introduce tu e-mail:</label>
+      <input type="text" id='newMail_id' name="" value="" required>
+      <label for="newTlfn_id">Introduce un nº de telefono (opcional):</label>
+      <input type="text" id='newTlfn_id' name="" value="">
+      <input type="submit" name="" value="Registrarme">
+    </form>
+
+    <div id="comeback_id">
+      <p>¿Ya tienes cuenta?</p>
+      <button type="button" name="button" onclick="window.location.href='/login.html'">Identificarse</button>
+    </div>
+  </body>
+</html>
