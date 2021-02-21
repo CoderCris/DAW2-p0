@@ -1,4 +1,4 @@
-import * from db
+//import * from db
 
 const form = document.getElementById('newUserForm_id')
 
@@ -8,17 +8,20 @@ form.addEventListener('submit', (e) => {
   var pass = document.getElementById('newPass_id').value;
   var mail = document.getElementById('newMail_id').value;
   var phone = document.getElementById('newTlfn_id').value;
-  let messages = []
 
   if (! /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(mail))
   {
-      messages.push("You have entered an invalid email address!");
+      document.getElementById('newMail_error').innerHTML += '<p>Formato de email incorrecto</p>';
       e.preventDefault()
+  }else {
+    document.getElementById('newMail_error').innerHTML += '';
   }
 
-  if(! phone == null && ! /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/im.test(phone))
+  if(! /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/im.test(phone) && phone != "")
   {
-    alert("Numero no válido");
-    return false;
+    document.getElementById('newTlfn_error').innerHTML += '<p>Numero de telefono incorrrecto</p>';
+    e.preventDefault()
+  }else {
+    document.getElementById('newTlfn_error').innerHTML += '';
   }
 })
