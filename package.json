@@ -1,0 +1,22 @@
+{
+  "name": "daw2-p0",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CoderCris/DAW2-p0.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CoderCris/DAW2-p0/issues"
+  },
+  "homepage": "https://github.com/CoderCris/DAW2-p0#readme",
+  "dependencies": {
+    "firebase": "^8.2.9"
+  }
+}

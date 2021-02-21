@@ -1,3 +1,5 @@
+import "firebase/auth";
+
 var firebaseConfig = {
     apiKey: "AIzaSyBTJqcRNi-OMqWVNTx2UPD5vjmzgaK--W0",
     authDomain: "p0-daw2.firebaseapp.com",

@@ -1,4 +1,4 @@
-//import * from db
+import * from "./db.js"
 
 const form = document.getElementById('newUserForm_id')
 
